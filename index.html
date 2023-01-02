@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>UserAgent</title>
+    </head>
+    <body>
+    <p id="Agent"></p>
+    <button onClick="document.execCommand(navigator.userAgent);">Copy</button>
+    </body>
+    <script>document.getElementById("Agent").innerHTML=navigator.userAgent</script>
+</html>
