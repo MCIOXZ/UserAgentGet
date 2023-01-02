@@ -10,3 +10,26 @@
     </body>
     <script>document.getElementById("Agent").innerHTML=navigator.userAgent</script>
 </html>
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UserAgent</title>
+    </head>
+    <body>
+        <p id="Agent"></p><button onclick="copyf()">Copy</button>
+        <script>
+            function copyf(){
+                let copyInput = document.createElement('input');
+                document.body.appendChild(copyInput);
+                copyInput.setAttribute('value',navigator.userAgent);
+                copyInput.select();
+                document.execCommand("Copy");
+                alert("ok!");
+                copyInput.remove();
+            };
+            document.getElementById("Agent").innerHTML=navigator.userAgent;
+        </script>
+    </body>
+</html>
